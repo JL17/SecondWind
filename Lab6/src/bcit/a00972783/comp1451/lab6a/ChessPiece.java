@@ -24,7 +24,9 @@ public class ChessPiece {
 		this.isWhite = isWhite;
 	}
 	
-	
+	public void moving() {
+		System.out.println("moving...");
+	}
 	
 	
 }
