@@ -13,19 +13,37 @@ public class ChessPiece {
 	public int getValue() {
 		return value;
 	}
+	
 	public void setValue(int value) {
 		this.value = value;
-		
 	}
+	
 	public boolean isWhite() {
 		return isWhite;
 	}
+	
 	public void setWhite(boolean isWhite) {
 		this.isWhite = isWhite;
 	}
 	
-	public void moving() {
+	public void move() {
 		System.out.println("moving...");
+	}
+	
+	public String color() {
+		if(isWhite == true)
+		{
+			return "White";
+		}
+		else
+		{
+			return "Black";
+		}
+	}
+		
+	@Override
+	public String toString() {
+		return color() + " " + getClass().getSimpleName();
 	}
 	
 	
