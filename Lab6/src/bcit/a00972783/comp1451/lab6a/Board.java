@@ -4,9 +4,9 @@ public class Board {
 
 	Piece[][] board;
 	
+	
 	public Board() {
 		board = new Piece[8][8];
-		
 		initializeBoard();
 	}
 	
@@ -53,5 +53,6 @@ public class Board {
 	board[6][7] = new Knight(true, 3);
 	board[7][7] = new Rook(true, 5);
 	}
+	
 	
 }

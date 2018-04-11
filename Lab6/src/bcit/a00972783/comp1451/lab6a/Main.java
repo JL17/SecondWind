@@ -7,9 +7,7 @@ public class Main {
 
 
 	public static void main(String[] args) {
-		
-		Piece[][] setupPieces = new Piece[8][8];
-
+		Board b = new Board();
 	}
 
 }
