@@ -1,6 +1,6 @@
 package bcit.a00972783.comp1451.lab6a;
 
-public class Bishop extends ChessPiece {
+public class Bishop extends Piece {
 
 	public Bishop(boolean isWhite, int value) {
 		super(isWhite, value);

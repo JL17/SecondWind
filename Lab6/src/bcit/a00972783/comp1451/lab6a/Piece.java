@@ -1,10 +1,10 @@
 package bcit.a00972783.comp1451.lab6a;
 
-public class ChessPiece {
+public class Piece {
 	private boolean isWhite;
 	private int value;
 	
-	public ChessPiece (boolean isWhite, int value)
+	public Piece (boolean isWhite, int value)
 	{
 		setValue(value);
 		setWhite(isWhite);
