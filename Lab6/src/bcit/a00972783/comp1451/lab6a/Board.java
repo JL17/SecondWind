@@ -1,14 +1,17 @@
 package bcit.a00972783.comp1451.lab6a;
 
+import java.util.Arrays;
+
 public class Board {
 
-	Piece[][] board;
+	public Piece[][] board;
 	
 	
 	public Board() {
 		board = new Piece[8][8];
 		initializeBoard();
 	}
+
 	
 	public void initializeBoard() {
 		for (int i = 0; i < 8; i++)
@@ -52,7 +55,23 @@ public class Board {
 	board[5][7] = new Bishop(true, 3);
 	board[6][7] = new Knight(true, 3);
 	board[7][7] = new Rook(true, 5);
+	
 	}
 	
+	@Override
+	public String toString(){
+		return Arrays.toString(board);
+	}
+	
+	public void printBoard()
+	{
+		for (int i = 0; i < 8; i++) {
+			System.out.printf(board[i][0].toString() + "||");
+		}
+		System.out.println();
+		for (int i = 0; i < 8; i++) {
+			System.out.printf(board[i][1].toString() + "|| ");
+		}
+	}
 	
 }
