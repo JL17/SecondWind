@@ -68,10 +68,25 @@ public class Board {
 		for (int i = 0; i < 8; i++) {
 			System.out.printf(board[i][0].toString() + "||");
 		}
+		
 		System.out.println();
+		
 		for (int i = 0; i < 8; i++) {
 			System.out.printf(board[i][1].toString() + "|| ");
 		}
+		
+		System.out.println();
+
+		for (int j = 0; j < 8; j++) {
+			System.out.printf(board[j][6].toString() + "||");
+		}
+		
+		System.out.println();
+		
+		for (int j = 0; j < 8; j++) {
+			System.out.printf(board[j][7].toString() + "|| ");
+		}
 	}
+	
 	
 }
