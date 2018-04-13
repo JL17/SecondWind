@@ -18,7 +18,8 @@ public class Board {
 			for (int j = 0; j < 8; j++) {
 				board[i][j] = null;
 			}
-		
+	
+	//white
 	board[0][1] = new Pawn(false, 1);
 	board[1][1] = new Pawn(false, 1);
 	board[2][1] = new Pawn(false, 1);

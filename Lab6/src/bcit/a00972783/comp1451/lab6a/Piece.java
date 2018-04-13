@@ -46,5 +46,18 @@ public class Piece {
 		return color() + " " + getClass().getSimpleName();
 	}
 	
+	@Override
+	public boolean equals(Object piece) {
+		int difference = 0;
+		difference = ((Piece)piece).getValue() - this.getValue();
+		if (Math.abs(difference) <= 1) {
+		return true;
+		}
+		else {
+		return false;
+		}
+	}
+	
+
 	
 }
